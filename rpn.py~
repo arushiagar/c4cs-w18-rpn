@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
-import readline
 import operator
-from colored import fg, bg, attr
+
 
 operators = {
     '+': operator.add,
@@ -32,8 +31,7 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print('%s%s Result: %s' % (fg(4), bg(214), attr(0)))
-        print(result)
+        print("Result: ", result)
 
 if __name__ == '__main__':
     main()
